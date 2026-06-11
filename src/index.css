@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    @apply bg-mist text-ink font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: #e0a82e;
+    color: #13201a;
+  }
+}
+
+@layer components {
+  /* Reusable glass surface */
+  .glass {
+    @apply border border-white/40 bg-white/55 backdrop-blur-xl;
+  }
+
+  .glass-dark {
+    @apply border border-white/10 bg-white/[0.06] backdrop-blur-xl;
+  }
+
+  /* Section vertical rhythm */
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  /* Eyebrow label used above section headings */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-forest-500;
+  }
+
+  /* Gold underline flourish */
+  .gold-rule::after {
+    content: '';
+    @apply mt-3 block h-[3px] w-16 rounded-full bg-gold-fade;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #eff2ed;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #74a892;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #40916c;
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Swiper pagination theming */
+.swiper-pagination-bullet {
+  background: #74a892 !important;
+  opacity: 0.5 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #e0a82e !important;
+  opacity: 1 !important;
+  width: 22px !important;
+  border-radius: 9999px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1b4332 !important;
+}
