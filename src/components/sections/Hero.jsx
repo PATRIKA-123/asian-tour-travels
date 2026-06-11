@@ -16,7 +16,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section id="home" className="relative flex min-h-[100svh] items-center overflow-hidden">
+    <section id="home" className="relative isolate flex min-h-[100svh] items-center overflow-hidden">
       {/* Background image + cinematic overlays */}
       <div className="absolute inset-0 -z-10">
         <motion.img
