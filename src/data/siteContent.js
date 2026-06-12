@@ -138,8 +138,8 @@ export const destinations = [
     description:
       'The abode of clouds — living root bridges, the wettest village on earth and the crystal-clear waters of Dawki.',
     spots: ['Shillong', 'Cherrapunji', 'Dawki', 'Mawlynnong', 'Laitlum Canyon'],
-    image:
-      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=80',
+    // Local image (place file at `public/meghalaya.jpg`)
+    image: '/Meghalaya.jpg',
   },
   {
     state: 'Arunachal Pradesh',
@@ -147,8 +147,8 @@ export const destinations = [
     description:
       'The land of the dawn-lit mountains — high passes, the grand Tawang Monastery and the untouched Ziro Valley.',
     spots: ['Tawang', 'Bomdila', 'Dirang', 'Ziro Valley', 'Sela Pass'],
-    image:
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80',
+    // Local image (place file at `public/arunachal.jpg`)
+    image: '/Arunachal.jpg',
   },
   {
     state: 'Nagaland',
