@@ -5,6 +5,9 @@ import { whatsappLink, defaultBookingMessage } from '../../utils/helpers'
 import Button from '../ui/Button'
 import MountainDivider from '../ui/MountainDivider'
 
+// Resolve images placed in `public/` (works with Vite and respects `base`)
+const bgImage = hero.image?.startsWith('/') ? `${import.meta.env.BASE_URL}${hero.image.slice(1)}` : hero.image
+
 const container = {
   hidden: {},
   show: { transition: { staggerChildren: 0.14, delayChildren: 0.2 } },
@@ -20,7 +23,7 @@ export default function Hero() {
       {/* Background image + cinematic overlays */}
       <div className="absolute inset-0 -z-10">
         <motion.img
-          src={hero.image}
+          src={bgImage}
           alt="Misty mountains of North East India"
           initial={{ scale: 1.12 }}
           animate={{ scale: 1 }}
