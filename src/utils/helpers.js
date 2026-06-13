@@ -14,6 +14,11 @@ export function telLink(number = business.primaryCall) {
   return `tel:+${number.replace(/[^\d]/g, '')}`
 }
 
+/** Build a mailto: link for email. */
+export function mailtoLink(email = business.email) {
+  return `mailto:${email}`
+}
+
 /** Google Maps directions link for the business address. */
 export function mapsLink() {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(

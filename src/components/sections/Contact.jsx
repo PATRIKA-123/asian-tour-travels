@@ -6,6 +6,7 @@ import {
   whatsappLink,
   telLink,
   mapsLink,
+  mailtoLink,
   fadeUp,
   viewportOnce,
 } from '../../utils/helpers'
@@ -15,6 +16,7 @@ import Button from '../ui/Button'
 const Phone = getIcon('Phone')
 const MapPin = getIcon('MapPin')
 const Clock = getIcon('Clock')
+const Mail = getIcon('Mail')
 const Send = getIcon('Send')
 
 const fieldBase =
@@ -66,6 +68,12 @@ export default function Contact() {
       Icon: Clock,
       title: 'Working Hours',
       lines: [business.hours],
+    },
+    {
+      Icon: Mail,
+      title: 'Email Us',
+      lines: [business.email],
+      href: mailtoLink(),
     },
   ]
 
