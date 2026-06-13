@@ -18,7 +18,7 @@ export const business = {
   // Primary number used for WhatsApp / tel actions (no spaces, country code).
   whatsapp: '917002116636',
   primaryCall: '917002116636',
-  email: 'booking@asiantourandtravels.in', // placeholder — update with real email
+  email: 'ranjuahamed86@gmail.com', // placeholder — update with real email
   address: {
     lines: ['H No. 07, City View Path', 'Nalpara, Datalpara', 'Guwahati - 781025', 'Assam, India'],
     short: 'Nalpara, Datalpara, Guwahati, Assam',
@@ -42,7 +42,7 @@ export const hero = {
   subheading: 'Asian Tour and Travels',
   description:
     'Your trusted travel partner for unforgettable journeys across Assam, Meghalaya, Arunachal Pradesh, Nagaland, Manipur, Mizoram and Tripura.',
-  image: '/Hero.jpg',
+  image: '/hero.jpg',
     
   badges: [
     { icon: 'ShieldCheck', label: 'Trusted Service' },
@@ -130,7 +130,7 @@ export const destinations = [
       'One-horned rhinos at Kaziranga, the sacred Kamakhya Temple and the river island of Majuli — the gateway to the North East.',
     spots: ['Kaziranga National Park', 'Kamakhya Temple', 'Majuli Island', 'Haflong', 'Guwahati'],
     image:
-      'https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1600&q=80',
+      'assam.jpg',
   },
   {
     state: 'Meghalaya',
@@ -184,7 +184,7 @@ export const destinations = [
       'Royal heritage and hidden carvings — the Ujjayanta Palace, the lake palace of Neermahal and ancient Unakoti.',
     spots: ['Ujjayanta Palace', 'Neermahal', 'Unakoti', 'Jampui Hills'],
     image:
-      'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80',
+      'tripura.jpg',
   },
 ]
 
