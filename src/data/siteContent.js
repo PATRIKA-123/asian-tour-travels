@@ -30,6 +30,7 @@ export const business = {
 export const nav = [
   { label: 'Home', href: '#home' },
   { label: 'Destinations', href: '#destinations' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Fleet', href: '#fleet' },
   { label: 'Services', href: '#services' },
   { label: 'Why Us', href: '#why-us' },
@@ -130,7 +131,7 @@ export const destinations = [
       'One-horned rhinos at Kaziranga, the sacred Kamakhya Temple and the river island of Majuli — the gateway to the North East.',
     spots: ['Kaziranga National Park', 'Kamakhya Temple', 'Majuli Island', 'Haflong', 'Guwahati'],
     image:
-      'assam.jpg',
+      '/assam.jpg',
   },
   {
     state: 'Meghalaya',
@@ -278,3 +279,110 @@ export const serviceList = [
 
 // Options for the contact form's Destination select
 export const destinationOptions = destinations.map((d) => d.state)
+
+
+export const galleryContent = {
+  heading: "Capturing Our Journeys",
+  subheading: "Explore the breathtaking landscapes and cultural snapshots from our recent travel expeditions.",
+  categories: ["All", "Mizoram", "Meghalaya", "Arunachal"],
+  images: [
+    // Mizoram Photos
+    {
+      id: 1,
+      src: '/Mualkhang.jpg',
+      verbatimName: "",
+      title: "Mualkhang Railway Station",
+      category: "Mizoram",
+      description: "Engineering marvel establishing deep rail links through rugged hills."
+    },
+    {
+      id: 2,
+      src: '/Sairang Termus.jpg',
+      verbatimName: "",
+      title: "Cultural Murals at Sairang",
+      category: "Mizoram",
+      description: "Traditional Mizo dance forms beautifully hand-painted on infrastructure portals."
+    },
+    {
+      id: 3,
+      src: '/Sairang.jpg',
+      verbatimName: "",
+      title: "Approaching Sairang Terminus",
+      category: "Mizoram",
+      description: "Low angle symmetry highlighting broad gauge railway paths."
+    },
+    {
+      id: 4,
+      src: '/city.jpg',
+      verbatimName:"",
+      title: "Balkon Vistas of Aizawl",
+      category: "Mizoram",
+      description: "Terrace-potted floras framing architectural layers winding around the peaks."
+    },
+    {
+      id: 5,
+      src: '/Sea light.jpg',
+      verbatimName: "",
+      title: "Sea of Lights at Midnight",
+      category: "Mizoram",
+      description: "Twinkling valley infrastructure illuminating night-sky mountain ridges."
+    },
+    // Meghalaya Photos
+    {
+      id: 6,
+      src: '/Waterfall.jpg',
+      verbatimName: "",
+      title: "Multi-Tiered Limestone Falls",
+      category: "Meghalaya",
+      description: "Pristine subterranean water cascading into highly saturated turquoise pools."
+    },
+    {
+      id: 7,
+      src: '/Cave.jpg',
+      verbatimName: "",
+      title: "Crepuscular Rays in Hidden Gorges",
+      category: "Meghalaya",
+      description: "Sunlight slicing dramatically through a canyon wall next to a hidden vertical fall."
+    },
+    {
+      id: 8,
+      src: '/Root.jpg',
+      verbatimName: "",
+      title: "Root Bridge Substructure Base",
+      category: "Meghalaya",
+      description: "Intricate aerial roots bound across boulders over glass-clear running riverbeds."
+    },
+    {
+      id: 9,
+      src: '/Valley.jpg',
+      verbatimName: "",
+      title: "Terraced Valleys of Jaintia Hills",
+      category: "Meghalaya",
+      description: "Soft, vibrant rolling hillsides layered with traditional step cultivation agricultural frames."
+    },
+    // Arunachal Photos
+    {
+      id: 10,
+      src: '/SelaPass.jpg',
+      title: "Snow-Dusted Slopes at Sela Pass",
+      category: "Arunachal",
+      description: "A dramatic look at the sweeping, snow-covered mountain ridges and pine-lined slopes of high-altitude Arunachal Pradesh."
+    },
+    {
+      id: 11,
+      src: '/flagbridge.jpg',
+      verbatimName: "",
+      title: "Handcrafted Cane Suspension Bridge",
+      category: "Arunachal",
+      description: "Traditional tribal suspension bridge across a mountain river draped with prayer flags."
+    },
+    {
+      id: 12,
+      src: '/cloudMountain.jpg',
+      verbatimName:"",
+      title: "Alpine Passes near Sela",
+      category: "Arunachal",
+      description: "Heavy cloud decks hugging high altitude mountain routes coated in early morning winter snow."
+    }
+  ]
+};
