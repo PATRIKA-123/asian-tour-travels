@@ -42,7 +42,7 @@ export const hero = {
   subheading: 'Asian Tour and Travels',
   description:
     'Your trusted travel partner for unforgettable journeys across Assam, Meghalaya, Arunachal Pradesh, Nagaland, Manipur, Mizoram and Tripura.',
-  image: '/hero.jpg',
+  image: '/Hero.jpg',
     
   badges: [
     { icon: 'ShieldCheck', label: 'Trusted Service' },
