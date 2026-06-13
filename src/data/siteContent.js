@@ -175,7 +175,7 @@ export const destinations = [
       'Gentle blue hills and warm hospitality — the capital Aizawl, scenic Reiek and the tallest falls in the state.',
     spots: ['Aizawl', 'Reiek', 'Vantawng Falls'],
     image:
-      'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1600&q=80',
+      '/Mizoram.jpg',
   },
   {
     state: 'Tripura',
